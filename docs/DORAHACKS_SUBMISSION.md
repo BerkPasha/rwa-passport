@@ -89,4 +89,4 @@ Institutions read the result through the **Legal Passport API**, with a scoped, 
 | Tags | RWA, LegalTech, RegTech, Compliance, Tokenization, Stellar |
 | Track / bounty | `[choose on DoraHacks]` |
 | Team | `[team members on DoraHacks]` |
-| Logo | `frontend/src/assets/brand/rwa-legal-passport-logo.jpg` |
+| Logo | `frontend/public/brand/rwa-passport-icon.png` (square icon); horizontal lockup: `frontend/public/brand/rwa-passport-lockup-dark.png` |

@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { BrandMark as LogoMark } from '../components/BrandMark'
+import { BrandLogo } from '../components/BrandLogo'
 import { DeploymentBanner } from '../components/Layout'
 import { PUBLIC_SITE } from '../site'
 import { EvidenceAnchorCard } from '../components/EvidenceAnchorCard'
@@ -76,9 +76,8 @@ function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/[0.07] bg-ink text-mist">
       <div className={`${CONTAINER} flex h-[72px] items-center justify-between`}>
-        <a href="#top" className={`flex items-center gap-3 ${FOCUS}`} aria-label="RWA Legal Passport, back to top">
-          <LogoMark />
-          <span className="font-display text-[15px] font-semibold tracking-[-0.01em]">RWA Legal Passport</span>
+        <a href="#top" className={`flex items-center ${FOCUS}`} aria-label="RWA Legal Passport, back to top">
+          <BrandLogo className="h-8 w-auto sm:h-9" />
         </a>
         <nav aria-label="Primary" className="hidden items-center gap-9 md:flex">
           {NAV_LINKS.map(link => (
@@ -682,10 +681,7 @@ function SiteFooter() {
       <div className={`${CONTAINER} pb-10 pt-20`}>
         <div className="grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-3 text-mist">
-              <LogoMark />
-              <span className="font-display text-[15px] font-semibold tracking-[-0.01em]">RWA Legal Passport</span>
-            </div>
+            <BrandLogo className="h-9 w-auto" />
             <p className="mt-6 max-w-sm font-body text-[14px] leading-relaxed">
               Legal evidence and transparency infrastructure for tokenized real-world assets.
             </p>

@@ -2,7 +2,7 @@ import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState, type ReactNode } from 'react'
 import { useAuth } from '../AuthContext'
 import { useServerInfo } from '../serverInfo'
-import { BrandMark } from './BrandMark'
+import { BrandLogo } from './BrandLogo'
 
 export const ROLE_LABELS: Record<string, string> = {
   platform_admin: 'Platform Operator',
@@ -168,11 +168,8 @@ export function Layout() {
       <aside className="flex w-64 shrink-0 flex-col border-r border-white/[0.06] bg-ink">
         {/* Logo: back to the public website */}
         <Link to="/" aria-label="RWA Legal Passport website" className="flex h-16 items-center gap-3 border-b border-white/[0.07] px-5 text-mist transition-colors hover:bg-white/[0.03]">
-          <BrandMark className="h-7 w-7 shrink-0" />
-          <div className="leading-tight">
-            <p className="font-display text-[14px] font-semibold tracking-[-0.01em]">RWA Legal Passport</p>
-            <p className="font-label text-[10px] uppercase tracking-[0.16em] text-ink-muted">Workspace</p>
-          </div>
+          <BrandLogo className="h-7 w-auto shrink-0" />
+          <span className="font-label text-[10px] uppercase tracking-[0.16em] text-ink-muted">Workspace</span>
         </Link>
 
         {/* Nav */}
