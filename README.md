@@ -4,8 +4,8 @@
 
 | | |
 |---|---|
-| Website | https://legalpassport.vercel.app/ |
-| Interactive demo (read-only, synthetic data, no sign-in) | https://legalpassport.vercel.app/demo |
+| Website | https://rwapassport.vercel.app/ |
+| Interactive demo (read-only, synthetic data, no sign-in) | https://rwapassport.vercel.app/demo |
 | Demo record anchored on Stellar Testnet (current, version 2) | [Transaction `843a5a6d…3c1240da`](https://stellar.expert/explorer/testnet/tx/843a5a6d9101b3e93a591c88008cf81eca9f25d0f2bd803d5741ef6c3c1240da) · ledger 5285093 |
 | Earlier anchor of the same asset (version 1, superseded) | [Transaction `1687c0dd…628123d2`](https://stellar.expert/explorer/testnet/tx/1687c0ddc4a85b07b3ec13e9064aa57a4556e8993b9ff78080b5ac9d628123d2) · ledger 5241718 |
 | Architecture | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
@@ -27,7 +27,7 @@ A token is issued once, but the legal documents behind it keep changing: prospec
 5. **Legal Passport API.** Institutions read the currently approved claims, the approvals behind them, the full version history and the Stellar evidence through a scoped, read-only API key (`GET /passport/{network}/{asset_code}/{issuer_key}`, plus `/history` and `/stellar-anchor`).
 6. **Stellar Testnet anchoring and verification.** The passport's evidence manifest (canonical JSON) is hashed with SHA-256. That digest is committed in one Testnet transaction, as the `MEMO_HASH` and a `manage_data` entry. Verification re-reads the transaction from Horizon and checks the network, the source account, the memo and the operation. It then checks that the stored manifest hashes to the anchored digest and that the current evidence still has exactly that digest.
 
-The [interactive demo](https://legalpassport.vercel.app/demo) walks through all of this on one asset (LPDEMO). Version 1 of its prospectus was approved and anchored. Version 2 then superseded it, which invalidated the version 1 approvals. Version 2 was reviewed, approved and anchored again. The two transactions above are the real Testnet commitments of that record.
+The [interactive demo](https://rwapassport.vercel.app/demo) walks through all of this on one asset (LPDEMO). Version 1 of its prospectus was approved and anchored. Version 2 then superseded it, which invalidated the version 1 approvals. Version 2 was reviewed, approved and anchored again. The two transactions above are the real Testnet commitments of that record.
 
 ## Architecture in brief
 

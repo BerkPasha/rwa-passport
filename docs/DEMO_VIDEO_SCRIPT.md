@@ -8,7 +8,7 @@ The video uses only what is publicly reachable and working today:
 Every value shown is synthetic demo data.
 
 **Before recording**
-- Open https://legalpassport.vercel.app/ in a clean browser window at 1440 px or wider, with no other tabs, bookmarks bar or extensions visible.
+- Open https://rwapassport.vercel.app/ in a clean browser window at 1440 px or wider, with no other tabs, bookmarks bar or extensions visible.
 - Keep a second tab ready on the Stellar Expert page of the current transaction: https://stellar.expert/explorer/testnet/tx/843a5a6d9101b3e93a591c88008cf81eca9f25d0f2bd803d5741ef6c3c1240da
 - Narration is about 400 words: speak at a calm pace. Timings are targets.
 
