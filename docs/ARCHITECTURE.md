@@ -1,6 +1,6 @@
 # Architecture
 
-RWA Legal Passport is one Python backend and one React codebase. The backend owns the legal record and every integrity rule. The frontend is a review application for issuers and legal reviewers, and it also builds the public website with a read-only demo.
+RWA Passport is one Python backend and one React codebase. The backend owns the legal record and every integrity rule. The frontend is a review application for issuers and legal reviewers, and it also builds the public website with a read-only demo.
 
 ```
  Reviewers (Bearer token)        Institutions (X-API-Key)        Website visitors

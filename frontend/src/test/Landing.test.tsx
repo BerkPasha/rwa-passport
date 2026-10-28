@@ -27,7 +27,7 @@ describe('Public website', () => {
     ])
     expect(screen.getByRole('link', { name: 'Explore Platform' })).toHaveAttribute('href', '#platform')
     expect(screen.getByRole('link', { name: 'How It Works' })).toHaveAttribute('href', '#how-it-works')
-    expect(document.title).toBe('RWA Legal Passport · The legal evidence layer for real-world assets')
+    expect(document.title).toBe('RWA Passport · The legal evidence layer for real-world assets')
     // The application's sidebar is not part of the website
     expect(screen.queryByTestId('auth-status')).not.toBeInTheDocument()
   })
@@ -77,7 +77,7 @@ describe('Public website', () => {
 
   it('states the business value: today versus with the platform, and why each capability matters', () => {
     renderAt('/')
-    const comparison = screen.getByRole('table', { name: 'The legal record today, and with RWA Legal Passport' })
+    const comparison = screen.getByRole('table', { name: 'The legal record today, and with RWA Passport' })
     const rows = within(comparison).getAllByRole('row').slice(1)
     expect(rows.map(r => within(r).getByRole('rowheader').textContent)).toEqual(
       ['01Static records', '02Fragmented documents', '03Unverifiable claims', '04Disconnected approvals'])
@@ -109,7 +109,7 @@ describe('Public website', () => {
   it('leaves the application where it was, now at /dashboard, with the logo back to the website', async () => {
     renderAt('/dashboard')
     expect(await screen.findByRole('heading', { level: 1, name: 'Dashboard' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'RWA Legal Passport website' })).toHaveAttribute('href', '/')
+    expect(screen.getByRole('link', { name: 'RWA Passport website' })).toHaveAttribute('href', '/')
     expect(within(screen.getByRole('navigation')).getByRole('link', { name: 'Dashboard' })).toHaveAttribute('href', '/dashboard')
   })
 })

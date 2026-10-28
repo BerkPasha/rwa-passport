@@ -1,6 +1,6 @@
 # Legal Approval Version Integrity (Stage 9B-3)
 
-This document describes how RWA Legal Passport keeps approvals tied to exactly what a reviewer approved. Outdated approvals are never presented as currently approved. The implementation is in `app/approval_integrity.py`; the regression tests are in `tests/test_approval_integrity.py`.
+This document describes how RWA Passport keeps approvals tied to exactly what a reviewer approved. Outdated approvals are never presented as currently approved. The implementation is in `app/approval_integrity.py`; the regression tests are in `tests/test_approval_integrity.py`.
 
 > **Updated for Stage 9B-4 (2026-10-16).** Since Stage 9B-4, approvals also bind the result of the quotation check (evidence snapshot format 2), every known claim must have a verified quotation before it can be approved, and three currency reasons were added. Statements of Stage 9B-3 that no longer hold are marked *superseded* below. The full evidence rules are in [EVIDENCE_VERIFICATION.md](EVIDENCE_VERIFICATION.md).
 

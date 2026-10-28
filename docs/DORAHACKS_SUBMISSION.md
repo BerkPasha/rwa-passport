@@ -6,7 +6,7 @@ Copy-paste text for the BUIDL page. Every statement describes the existing, work
 
 ## Project name
 
-RWA Legal Passport
+RWA Passport
 
 ## Tagline
 
@@ -18,7 +18,7 @@ One reviewable legal record per tokenized asset: versioned documents, claims quo
 
 ## Summary (under 1,200 characters)
 
-A tokenized asset is issued once, but its legal documents keep changing. RWA Legal Passport gives every asset one reviewable legal record.
+A tokenized asset is issued once, but its legal documents keep changing. RWA Passport gives every asset one reviewable legal record.
 
 Each PDF version is kept with its SHA-256 hash. Each legal claim cites a page and an exact quotation, which the server checks against that page's stored text. The issuer and an independent legal reviewer approve, and each approval is bound to the exact version, claims and asset information it covered. When a new version arrives, the old approvals stop applying automatically, and the history is kept.
 
@@ -36,7 +36,7 @@ Tokenization puts real-world assets on-chain, but their legal side still lives i
 
 ### What we built
 
-RWA Legal Passport is a legal evidence workflow and API for tokenized assets. It has five stages:
+RWA Passport is a legal evidence workflow and API for tokenized assets. It has five stages:
 
 1. **Asset.** A Stellar asset (asset code + issuer key) is registered under its issuer.
 2. **Legal documents.** PDFs are uploaded as versions. Each version keeps its SHA-256 hash and per-page text, and a new version supersedes the old one without deleting it.

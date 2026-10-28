@@ -8,8 +8,8 @@ export function NotFound() {
       <p className="text-sm font-semibold text-indigo-600">404</p>
       <h2 id="not-found-heading" className="mt-2 text-2xl font-bold text-slate-900">Page not found</h2>
       <p className="mt-3 text-sm text-slate-600">
-        The address <span className="break-all font-mono text-slate-800">{pathname}</span> is not a page of the
-        RWA Legal Passport. Nothing was loaded from the server.
+        The address <span className="break-all font-mono text-slate-800">{pathname}</span> is not a page of
+        RWA Passport. Nothing was loaded from the server.
       </p>
       <div className="mt-6 flex flex-wrap justify-center gap-3">
         <Link to="/dashboard" className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700">

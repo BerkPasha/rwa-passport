@@ -9,7 +9,7 @@ export function ApiDocs() {
       <div>
         <h2 className="text-2xl font-bold text-slate-900">API Reference</h2>
         <p className="mt-1 text-sm text-slate-500">
-          RWA Legal Passport — Institutional Legal Transparency API
+          RWA Passport — Institutional Legal Transparency API
         </p>
       </div>
 

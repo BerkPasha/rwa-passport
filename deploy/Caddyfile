@@ -1,4 +1,4 @@
-# RWA Legal Passport - read-only grant showcase: reverse proxy (DEPLOYMENT.md).
+# RWA Passport - read-only grant showcase: reverse proxy (DEPLOYMENT.md).
 #
 # PROPOSED CONFIGURATION, NOT TESTED WITH CADDY: Caddy was not available where it was written.
 # Its rules were rehearsed with deploy/rehearsal_proxy.py, which implements the same routing and

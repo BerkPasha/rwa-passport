@@ -1,5 +1,5 @@
 """
-Local grant demo of the RWA Legal Passport (Stage 10C-1, GRANT_DEMO.md).
+Local grant demo of RWA Passport (Stage 10C-1, GRANT_DEMO.md).
 
 Starts one disposable environment on this computer only (127.0.0.1), keeps it running until Ctrl+C
 (or --minutes), then stops it and deletes it:
@@ -50,7 +50,7 @@ _DEMO_ROLES = {
 def _credentials_file(root: Path, context: dict, sandbox: bool) -> Path:
     roles = _DEMO_ROLES if "asset" in context else _SYNTHETIC_ROLES
     lines = [
-        "RWA Legal Passport — local grant demo: fictional credentials of this run only.",
+        "RWA Passport — local grant demo: fictional credentials of this run only.",
         "They exist in this temporary environment and stop working when it is stopped.",
         "Sign in through the sidebar 'Credentials' panel: user token for reviewers, API key for institutions.",
         "This server is " + ("a writable sandbox (synthetic data)." if sandbox

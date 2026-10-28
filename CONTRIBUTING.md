@@ -1,4 +1,4 @@
-# Contributing to RWA Legal Passport
+# Contributing to RWA Passport
 
 ## English development standard
 

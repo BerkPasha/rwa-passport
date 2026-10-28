@@ -9,7 +9,7 @@ import { EvidenceGraph } from '../landing/EvidenceGraph'
 import { DEMO_HISTORY, DEMO_LEDGER_V2, DEMO_TX_V2, DEMO_VERIFICATION } from '../landing/demoRecord'
 import { testnetExplorerTx } from '../anchor'
 
-// The public website of RWA Legal Passport, at "/". The application itself starts at /dashboard. Every
+// The public website of RWA Passport, at "/". The application itself starts at /dashboard. Every
 // statement describes what the platform implements; there are no customers, metrics or contacts here,
 // and nothing promises legal certainty, ownership proof or compliance.
 
@@ -76,7 +76,7 @@ function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/[0.07] bg-ink text-mist">
       <div className={`${CONTAINER} flex h-[72px] items-center justify-between`}>
-        <a href="#top" className={`flex items-center ${FOCUS}`} aria-label="RWA Legal Passport, back to top">
+        <a href="#top" className={`flex items-center ${FOCUS}`} aria-label="RWA Passport, back to top">
           <BrandLogo className="h-8 w-auto sm:h-9" />
         </a>
         <nav aria-label="Primary" className="hidden items-center gap-9 md:flex">
@@ -226,11 +226,11 @@ function Problem() {
         <SectionHeader id="problem-title" tone="light" eyebrow="The problem" title="Tokenization moves fast. Legal clarity should too."
           lead="Assets can be issued on-chain in minutes. The legal position behind them still lives in static files, scattered folders and email threads, so every review begins by reconstructing a trail that should already exist." />
 
-        <div className="mt-16 border-t border-graphite" role="table" aria-label="The legal record today, and with RWA Legal Passport">
+        <div className="mt-16 border-t border-graphite" role="table" aria-label="The legal record today, and with RWA Passport">
           <div role="row" className={`hidden grid-cols-12 gap-6 border-b border-paper-line py-4 lg:grid ${LABEL}`}>
             <span role="columnheader" className="col-span-3 text-paper-muted">Friction</span>
             <span role="columnheader" className="col-span-4 text-paper-muted">Today</span>
-            <span role="columnheader" className="col-span-5 text-accent-dark">With RWA Legal Passport</span>
+            <span role="columnheader" className="col-span-5 text-accent-dark">With RWA Passport</span>
           </div>
           {COMPARISON.map((row, i) => (
             <div key={row.friction} role="row" className="grid gap-4 border-b border-paper-line py-8 lg:grid-cols-12 lg:gap-6">
@@ -243,7 +243,7 @@ function Problem() {
                 <p className="font-body text-[15px] leading-relaxed text-paper-muted text-pretty">{row.today}</p>
               </div>
               <div role="cell" className="lg:col-span-5">
-                <p className={`${LABEL} mb-2 text-accent-dark lg:hidden`}>With RWA Legal Passport</p>
+                <p className={`${LABEL} mb-2 text-accent-dark lg:hidden`}>With RWA Passport</p>
                 <p className="flex gap-3 font-body text-[15px] leading-relaxed text-graphite text-pretty">
                   <span aria-hidden className="mt-[10px] h-px w-4 shrink-0 bg-accent" />
                   {row.withPassport}
@@ -704,7 +704,7 @@ function SiteFooter() {
           </nav>
         </div>
         <div className="mt-20 flex flex-col gap-4 border-t border-white/10 pt-8 font-label text-[11px] uppercase tracking-[0.12em] text-ink-muted sm:flex-row sm:items-center sm:justify-between">
-          <span>© 2026 RWA Legal Passport</span>
+          <span>© 2026 RWA Passport</span>
           <span>Stellar Testnet only · Not legal advice</span>
           <a href="#top" className={`group inline-flex items-center gap-2 hover:text-mist ${FOCUS}`}>Back to top <Arrow up /></a>
         </div>
@@ -714,7 +714,7 @@ function SiteFooter() {
 }
 
 export function Landing() {
-  useEffect(() => { document.title = 'RWA Legal Passport · The legal evidence layer for real-world assets' }, [])
+  useEffect(() => { document.title = 'RWA Passport · The legal evidence layer for real-world assets' }, [])
   return (
     <div id="top" className="min-h-screen bg-ink font-body antialiased">
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-mist focus:px-4 focus:py-2 focus:text-ink">

@@ -1,6 +1,6 @@
 @echo off
 rem ===========================================================================
-rem  RWA Legal Passport - local launcher
+rem  RWA Passport - local launcher
 rem
 rem  Double-click this file (or the "RWA Legal Passport" desktop shortcut) to:
 rem    1. start the FastAPI backend  -> http://127.0.0.1:8000  (own window)
@@ -48,10 +48,10 @@ if /i "%~1"=="--frontend-title" goto :frontend_title
 rem ===========================================================================
 rem  Launcher
 rem ===========================================================================
-title RWA Legal Passport - Launcher
+title RWA Passport - Launcher
 echo.
 echo ============================================================
-echo  RWA Legal Passport - starting
+echo  RWA Passport - starting
 echo ============================================================
 echo.
 
@@ -129,7 +129,7 @@ echo [..] Opening %FRONTEND_URL% in your default browser...
 start "" "%FRONTEND_URL%/"
 echo.
 echo ============================================================
-echo  RWA Legal Passport is running.
+echo  RWA Passport is running.
 echo    Application : %FRONTEND_URL%
 echo    API docs    : %BACKEND_URL%/docs
 echo.
@@ -146,10 +146,10 @@ rem ===========================================================================
 rem  Server windows (started by the launcher)
 rem ===========================================================================
 :run_backend
-title RWA Legal Passport - Backend (port %BACKEND_PORT%)
+title RWA Passport - Backend (port %BACKEND_PORT%)
 cd /d "%ROOT%"
 echo ============================================================
-echo  RWA Legal Passport - BACKEND (FastAPI)
+echo  RWA Passport - BACKEND (FastAPI)
 echo    API      : %BACKEND_URL%
 echo    API docs : %BACKEND_URL%/docs
 echo.
@@ -164,12 +164,12 @@ pause >nul
 exit /b
 
 :run_frontend
-title RWA Legal Passport - Frontend (port %FRONTEND_PORT%)
+title RWA Passport - Frontend (port %FRONTEND_PORT%)
 cd /d "%FRONTEND_DIR%"
 rem Make sure node.exe (next to npm.cmd) is on PATH for the vite shim.
 for %%D in ("%NPM%") do set "PATH=%%~dpD;%PATH%"
 echo ============================================================
-echo  RWA Legal Passport - FRONTEND (React + Vite)
+echo  RWA Passport - FRONTEND (React + Vite)
 echo    Application : %FRONTEND_URL%
 echo.
 echo  Keep this window open while you use the app.
@@ -197,7 +197,7 @@ ping -n 2 127.0.0.1 >nul
 goto :frontend_title_loop
 :frontend_title_set
 ping -n 2 127.0.0.1 >nul
-title RWA Legal Passport - Frontend (port %FRONTEND_PORT%)
+title RWA Passport - Frontend (port %FRONTEND_PORT%)
 exit /b 0
 
 rem ===========================================================================
@@ -205,12 +205,12 @@ rem  Helpers
 rem ===========================================================================
 :start_backend
 echo [..] Starting the backend  on port %BACKEND_PORT% in a new window...
-start "RWA Legal Passport - Backend" /D "%ROOT%" "%ComSpec%" /d /s /c ""%SELF%" --backend"
+start "RWA Passport - Backend" /D "%ROOT%" "%ComSpec%" /d /s /c ""%SELF%" --backend"
 exit /b 0
 
 :start_frontend
 echo [..] Starting the frontend on port %FRONTEND_PORT% in a new window...
-start "RWA Legal Passport - Frontend" /D "%FRONTEND_DIR%" "%ComSpec%" /d /s /c ""%SELF%" --frontend"
+start "RWA Passport - Frontend" /D "%FRONTEND_DIR%" "%ComSpec%" /d /s /c ""%SELF%" --frontend"
 exit /b 0
 
 :backend_alive
@@ -220,7 +220,7 @@ exit /b %errorlevel%
 
 :frontend_alive
 rem errorlevel 0 when THIS app's frontend is served on the port.
-"%CURL%" %CURL_OPTS% --max-time 10 "%FRONTEND_URL%/" 2>nul | findstr /C:"<title>RWA Legal Passport</title>" >nul
+"%CURL%" %CURL_OPTS% --max-time 10 "%FRONTEND_URL%/" 2>nul | findstr /C:"<title>RWA Passport</title>" >nul
 exit /b %errorlevel%
 
 :port_owner
@@ -242,27 +242,27 @@ rem ===========================================================================
 :err_backend_port
 echo [ERROR] Port %BACKEND_PORT% is already in use by another program:
 echo         program: %PORT_PROC%   PID: %PORT_PID%
-echo         It is not the RWA Legal Passport backend, so no second backend
+echo         It is not the RWA Passport backend, so no second backend
 echo         was started. Close that program, then run this launcher again.
 goto :fail
 
 :err_frontend_port
 echo [ERROR] Port %FRONTEND_PORT% is already in use by another program:
 echo         program: %PORT_PROC%   PID: %PORT_PID%
-echo         It is not the RWA Legal Passport frontend, so no second frontend
+echo         It is not the RWA Passport frontend, so no second frontend
 echo         was started. Close that program, then run this launcher again.
 goto :fail
 
 :err_backend_timeout
 echo.
 echo [ERROR] The backend did not respond within %BACKEND_WAIT_SECONDS% seconds.
-echo         Check the "RWA Legal Passport - Backend" window for errors.
+echo         Check the "RWA Passport - Backend" window for errors.
 goto :fail
 
 :err_frontend_timeout
 echo.
 echo [ERROR] The frontend did not respond within %FRONTEND_WAIT_SECONDS% seconds.
-echo         Check the "RWA Legal Passport - Frontend" window for errors.
+echo         Check the "RWA Passport - Frontend" window for errors.
 goto :fail
 
 :err_venv

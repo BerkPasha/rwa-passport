@@ -29,7 +29,7 @@ _ANTHROPIC_KEY_RE = re.compile(r"^sk-ant-[A-Za-z0-9_-]{20,}$")
 
 
 class Settings(BaseSettings):
-    app_name: str = "RWA Legal Passport"
+    app_name: str = "RWA Passport"
     app_version: str = "0.1.0"
     app_env: str = "development"
     database_url: str = "sqlite+aiosqlite:///./rwa_legal_passport.db"

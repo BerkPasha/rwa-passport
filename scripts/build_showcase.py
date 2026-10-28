@@ -162,9 +162,9 @@ def build(out: Path, with_stellar_demo: bool, demo_dataset: Path = e2e_run.DEMO_
 
     # 5. Settings, evaluator credentials (outside deploy/), rehearsal context
     (deploy / "showcase.env").write_text(
-        "# RWA Legal Passport - read-only grant showcase (DEPLOYMENT.md). No secret is set here.\n"
+        "# RWA Passport - read-only grant showcase (DEPLOYMENT.md). No secret is set here.\n"
         + "".join(f"{k}={v}\n" for k, v in SHOWCASE_SETTINGS.items()), encoding="utf-8")
-    lines = ["RWA Legal Passport — read-only grant showcase: fictional credentials of this bundle.",
+    lines = ["RWA Passport — read-only grant showcase: fictional credentials of this bundle.",
              "They only read synthetic data on a server that refuses every write.", ""]
     for name, label in (("evaluator_a", "Evaluator A (independent legal reviewer; issuers: e2e-meridian"
                          + "".join(f", {i}" for i in demo_issuers) + ")"),

@@ -104,7 +104,7 @@ test.describe('Negative journeys', () => {
     expect(response?.status()).toBe(200)      // a single-page application: the address is resolved in the browser
     await expect(page.getByRole('heading', { level: 2, name: 'Page not found' })).toBeVisible()
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Page Not Found')
-    await expect(page).toHaveTitle('Page Not Found · RWA Legal Passport')
+    await expect(page).toHaveTitle('Page Not Found · RWA Passport')
     await expect(page.getByText('/no-such-page', { exact: true })).toBeVisible()
     await expect(navLink(page, 'Asset Registry')).toBeVisible()
     // Only the public /health route, for the server's policies (Stage 10C-1); no data is requested

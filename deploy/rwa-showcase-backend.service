@@ -1,4 +1,4 @@
-# RWA Legal Passport - read-only grant showcase: backend service (DEPLOYMENT.md).
+# RWA Passport - read-only grant showcase: backend service (DEPLOYMENT.md).
 #
 # PROPOSED CONFIGURATION, NOT TESTED WITH SYSTEMD: it was written on a machine without systemd. The
 # same command line and settings were rehearsed locally (scripts/e2e_run.py, environment "rehearsal").
@@ -10,7 +10,7 @@
 #                              showcase.env, data/ (database, PDFs, registry, anchoring account), www/
 
 [Unit]
-Description=RWA Legal Passport read-only showcase API
+Description=RWA Passport read-only showcase API
 After=network-online.target
 Wants=network-online.target
 

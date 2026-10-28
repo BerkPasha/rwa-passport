@@ -59,7 +59,7 @@ describe('Public demo', () => {
     expect(await screen.findByTestId('demo-banner', {}, FIRST_LOAD)).toHaveTextContent(DEMO_LABEL)
     expect(DEMO_LABEL).toBe('Interactive Demo — Synthetic Data — Read Only — Stellar Testnet')
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Overview')
-    await waitFor(() => expect(document.title).toBe('Overview · Interactive Demo · RWA Legal Passport'))
+    await waitFor(() => expect(document.title).toBe('Overview · Interactive Demo · RWA Passport'))
     const assets = screen.getByRole('region', { name: 'Assets' })
     for (const code of ['LPDEMO', 'LPFUND', 'LPNOTE']) expect(within(assets).getByRole('link', { name: code })).toBeInTheDocument()
     expect(within(assets).getByText('Approval current')).toBeInTheDocument()

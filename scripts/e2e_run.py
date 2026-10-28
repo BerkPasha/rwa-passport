@@ -1,5 +1,5 @@
 """
-Real-browser end-to-end tests of the RWA Legal Passport interface (Stage 10B-1, E2E_TESTING.md).
+Real-browser end-to-end tests of the RWA Passport interface (Stage 10B-1, E2E_TESTING.md).
 
 The browser tests run only on a computer whose external networking is switched off (Stage 10C-3B,
 E2E_TESTING.md "Offline run"). Start the runner while still online: it prints the instructions, waits

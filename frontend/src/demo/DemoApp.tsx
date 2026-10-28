@@ -90,7 +90,7 @@ function DemoLayout() {
   const main = useRef<HTMLElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
 
-  useEffect(() => { document.title = `${title} · Interactive Demo · RWA Legal Passport` }, [title])
+  useEffect(() => { document.title = `${title} · Interactive Demo · RWA Passport` }, [title])
   // Every page starts at its top, like a page load
   useEffect(() => {
     main.current?.scrollTo?.(0, 0)

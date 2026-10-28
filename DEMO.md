@@ -1,4 +1,4 @@
-# RWA Legal Passport — Stellar Testnet demo
+# RWA Passport — Stellar Testnet demo
 
 A local, reproducible demonstration of the MVP with **synthetic, non-confidential data** and a **real Stellar Testnet transaction**. Design details: [STELLAR_ANCHORING.md](STELLAR_ANCHORING.md).
 

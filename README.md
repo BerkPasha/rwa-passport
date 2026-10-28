@@ -1,6 +1,6 @@
-# RWA Legal Passport
+# RWA Passport
 
-**The legal evidence layer for tokenized real-world assets.** RWA Legal Passport gives every tokenized asset one reviewable legal record. The record holds its documents and every version of them, the legal claims drawn from those documents with the exact page they quote, and the human approvals bound to the version they reviewed. It also tracks what has changed since. An integrity commitment of that record is anchored on **Stellar Testnet**.
+**The legal evidence layer for tokenized real-world assets.** RWA Passport gives every tokenized asset one reviewable legal record. The record holds its documents and every version of them, the legal claims drawn from those documents with the exact page they quote, and the human approvals bound to the version they reviewed. It also tracks what has changed since. An integrity commitment of that record is anchored on **Stellar Testnet**.
 
 | | |
 |---|---|

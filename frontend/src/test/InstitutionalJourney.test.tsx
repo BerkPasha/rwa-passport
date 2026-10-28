@@ -47,7 +47,7 @@ describe('Unknown addresses and page titles', () => {
     expect(screen.getByRole('link', { name: 'Open the asset registry' })).toHaveAttribute('href', '/assets')
     expect(screen.getByRole('heading', { level: 1, name: 'Page Not Found' })).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
-    await waitFor(() => expect(document.title).toBe('Page Not Found · RWA Legal Passport'))
+    await waitFor(() => expect(document.title).toBe('Page Not Found · RWA Passport'))
   })
 
   it('every page has the title of what it shows', () => {

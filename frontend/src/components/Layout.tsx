@@ -160,14 +160,14 @@ export function Layout() {
   const hasCredentials = userToken || apiKey
 
   const title = pageTitle(location.pathname)
-  useEffect(() => { document.title = `${title} · RWA Legal Passport` }, [title])
+  useEffect(() => { document.title = `${title} · RWA Passport` }, [title])
 
   return (
     <div className="flex h-screen overflow-hidden bg-paper">
       {/* Sidebar */}
       <aside className="flex w-64 shrink-0 flex-col border-r border-white/[0.06] bg-ink">
         {/* Logo: back to the public website */}
-        <Link to="/" aria-label="RWA Legal Passport website" className="flex h-16 items-center gap-3 border-b border-white/[0.07] px-5 text-mist transition-colors hover:bg-white/[0.03]">
+        <Link to="/" aria-label="RWA Passport website" className="flex h-16 items-center gap-3 border-b border-white/[0.07] px-5 text-mist transition-colors hover:bg-white/[0.03]">
           <BrandLogo className="h-7 w-auto shrink-0" />
           <span className="font-label text-[10px] uppercase tracking-[0.16em] text-ink-muted">Workspace</span>
         </Link>
