@@ -60,7 +60,7 @@ Institutions read the result through the **Legal Passport API**, with a scoped, 
 - Website: https://legalpassport.vercel.app/
 - Interactive demo (read-only, no sign-in, synthetic data): https://legalpassport.vercel.app/demo
 - Current anchor on Stellar Testnet: https://stellar.expert/explorer/testnet/tx/843a5a6d9101b3e93a591c88008cf81eca9f25d0f2bd803d5741ef6c3c1240da
-- Source code: https://github.com/BerkPasha/rwa-legal-passport
+- Source code: https://github.com/BerkPasha/rwa-passport
 - Demo video: `[link]`
 
 ### Tech stack
